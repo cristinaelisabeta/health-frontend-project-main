@@ -1,0 +1,75 @@
+.user-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: flex-end;
+  width: 100vw;
+  padding: 10px 20px;
+  background-color: #EFF1F3;
+}
+
+.user-message {
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0.04em;
+  color: #212121;
+}
+
+.logOut-btn {
+  color: #9B9FAA;
+  border: none;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  position: relative;
+}
+
+.logOut-btn:hover {
+  cursor: pointer;
+  color: #FC842D;
+}
+
+.logOut-btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 150%;
+  background-color: #9B9FAA;
+}
+
+.back-btn {
+  border: none;
+  margin-right: auto;
+}
+
+.back-btn:hover {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .user-menu {
+    background-color: transparent;
+  }
+
+  .logOut-btn {
+    background-color: transparent;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .user-menu {
+    background-color: transparent;
+  }
+
+  .logOut-btn {
+    background-color: transparent;
+  }
+}

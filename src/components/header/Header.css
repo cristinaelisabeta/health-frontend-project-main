@@ -1,0 +1,105 @@
+header {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #E0E0E0;
+}
+
+.header-logo {
+  width: 46px;
+  height: 44px;
+  margin-right: 8px;
+}
+
+.header-logo:hover,
+.aplication-name:hover {
+  cursor: pointer;
+}
+
+.user-btns {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.user-btn {
+  text-transform: uppercase;
+  color: #9B9FAA;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 17px;
+  font-weight: 700;
+}
+
+.user-info {
+  margin-left: auto;
+}
+
+.aplication-name {
+  font-size: 16px;
+  color: #212121;
+  text-transform: capitalize;
+
+}
+
+.hide-class {
+  display: none;
+}
+
+.orange-colored {
+  color: #FC842D
+}
+
+.user-info-desktop {
+  display: none;
+}
+
+.header-menu:hover {
+  cursor: pointer;
+  color: #FC842D;
+}
+
+.user-info-desktop .active {
+  color: #212121
+}
+
+.user-btns .active {
+  color: #212121
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .aplication-name {
+    display: flex;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+  .header-menu {
+    display: none;
+  }
+
+  .aplication-name {
+    display: flex;
+  }
+
+  .user-info-desktop {
+    display: flex;
+    margin-left: 30px;
+    padding: 0 30px;
+    gap: 40px;
+    position: relative;
+  }
+
+  .user-info-desktop::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 150%;
+    background-color: #9B9FAA;
+  }
+}
